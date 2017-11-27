@@ -1,0 +1,79 @@
+Creation:
+create Login(
+userid int,
+username varchar(15),
+password varchar(15))
+
+create UserDetails(
+userid int,
+firstname varchar(12),
+lastname varchar(12),
+age int,
+emailid varchar(40),
+mobileno bigint,
+primarykey(userid))
+
+create Exam(
+eid int,
+ename varchar(12),
+difficulty enum{1,2,3},
+Questionnum int,
+passmark int,
+starttime time,
+endtime time,
+primarykey(eid))
+
+create Question(
+qid int,
+mid int,
+question varchar(200),
+difficulty enum{1,2,3},
+category varchar(20),
+answer varchar(30))
+
+create Choices(
+qid int,
+choice varchar(30))
+
+create Material(
+mid int,
+Text varchar(200))
+
+create ExamQuestion(
+eid int,
+qid int)
+
+create AnswerDatabase(
+eid int,
+qid int,
+userid int,
+uanswer varchar(20),
+answer varchar(20))
+
+create Results(
+userid int,
+eid int,
+score int)
+
+
+Select:
+
+Login Verify
+
+select userid from Login where username='' && password=''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
