@@ -2,6 +2,12 @@ package model;
 
 import java.sql.Time;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 @Entity
 @Table(name="exam")
 public class Exam {
