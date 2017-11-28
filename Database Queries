@@ -1,11 +1,7 @@
-Creation:
-create Login(
-userid int,
-username varchar(15),
-password varchar(15))
-
 create UserDetails(
 userid int,
+username varchar(12),
+password varchar(12),
 firstname varchar(12),
 lastname varchar(12),
 age int,
