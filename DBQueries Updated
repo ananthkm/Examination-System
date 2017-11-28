@@ -1,0 +1,10 @@
+create table UserDetails(userid int,username text,password text,firstname text,lastname text,emailid text,mobileno bigint,age int,prim
+ary key(userid));
+
+create table Exam(eid int,name text,difficulty enum('Easy','Medium','Hard'),passmark int,starttime time,endtime  time,primary key(eid));
+
+create table Question(qid int,question text,difficulty enum('Easy','Medium','hard'),category text,answer text,primary key(qid));
+
+create table Choices(qid int,Choice text,foreign key(qid) references Question(qid));
+
+ create table Material(qid int,Text text,foreign key(qid) references Question(qid));
