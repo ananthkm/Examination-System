@@ -10,9 +10,9 @@ create table Choices(qid int,Choice text,foreign key(qid) references Question(qi
 create table Material(qid int,Text text,foreign key(qid) references Question(qid));
 
 create table Register(userid int,eid int,foreign key(userid) references UserDetails(userid),foreign key(eid) references Exam(eid));
- 
+
 create table ExamQuestions(eid int,qid int,foreign key(eid) references Exam(eid),foreign key(qid) references Question(qid));
- 
+
 create table Result(userid int,eid int,score int,foreign key(userid) references UserDetails(userid),foreign key(eid) references Exam(eid));
 
 create table AnswerDatabase(eid int,qid int,userid int,uanswer text,answer text,foreign key(eid) references Exam(eid),foreign key(qid) references Question(qid),foreign key(userid) references UserDetails(userid));
