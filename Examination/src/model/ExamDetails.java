@@ -14,7 +14,6 @@ public class ExamDetails {
 	@GeneratedValue
 	private Integer id;
 	private String name;
-	private Integer qNumber;
 	private Integer passMark;
 	private Date startTime;
 	private Date endTime;
@@ -29,12 +28,6 @@ public class ExamDetails {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public Integer getqNumber() {
-		return qNumber;
-	}
-	public void setqNumber(Integer qNumber) {
-		this.qNumber = qNumber;
 	}
 	public Integer getPassMark() {
 		return passMark;
