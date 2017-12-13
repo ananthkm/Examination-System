@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "exam")
+@Table(name = "exm_examdetails")
 public class Exam {
 	public Exam() {
 		super();
@@ -16,19 +16,19 @@ public class Exam {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
-	@Column(name = "exam_Id")
+	@Column(name = "exam_id")
 	private int examId;
 
 	@Column(name = "name")
 	private String name;
 
-	@Column(name = "passMark")
+	@Column(name = "pass_mark")
 	private int passMark;
 
-	@Column(name = "startTime")
+	@Column(name = "star_ttime")
 	private String startTime;
 
-	@Column(name = "endTime")
+	@Column(name = "end_time")
 	private String endTime;
 
 	public int getExamId() {
